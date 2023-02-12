@@ -1,5 +1,5 @@
 # Ask for user input and check it is valid.
-while(True):
+while True:
     # Ask user to guess one letter."
     guess = input("Please, give a single letter: ")
 
