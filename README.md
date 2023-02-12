@@ -14,3 +14,4 @@ This consists of setting up a word list (as a list), choosing a word from the li
 ## Milestone 3: Check if the guessed character is in the word
 
 Initially the user is asked for input and then this is checked to be a single alphabetical letter. This is repeated until the condition is valid. 
+Next we check that the approved letter is in the word randomly chosed from a list of five fruits. 
