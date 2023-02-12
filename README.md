@@ -10,3 +10,7 @@ This consists of getting the Git and GitHub going.
 ## Milestone 2: Create the variables for the game
 
 This consists of setting up a word list (as a list), choosing a word from the list (using random.choice), and asking a user to select a letter (with input). Once the user has selected a letter, it is tested (in a if statement) for validity (i.e. that it is an alphabetical letter and just one character). The input is tested with isalpha() method and len. 
+
+## Milestone 3: Check if the guessed character is in the word
+
+Initially the user is asked for input and then this is checked to be a single alphabetical letter. This is repeated until the condition is valid. 
