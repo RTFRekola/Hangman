@@ -15,3 +15,7 @@ This consists of setting up a word list (as a list), choosing a word from the li
 
 Initially the user is asked for input and then this is checked to be a single alphabetical letter. This is repeated until the condition is valid. 
 Next we check that the approved letter is in the word randomly chosed from a list of five fruits. 
+
+## Milestone 4: Create the game class
+
+First the input and validation routines are moved into separate functions. 
