@@ -24,4 +24,4 @@ if (guess in word):
     print("Good guess!", guess, "is in the word.")
 else: 
     print("Sorry,", guess, "is not in the word. Try again.")
-# end if
+# end if 
