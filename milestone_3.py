@@ -20,7 +20,7 @@ while True:
 # end while
 
 # Check if the approved letter is in the randomly chosen word.
-if (guess in word):
+if guess in word:
     print("Good guess!", guess, "is in the word.")
 else: 
     print("Sorry,", guess, "is not in the word. Try again.")
