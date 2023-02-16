@@ -33,7 +33,7 @@ class Hangman:
             guess = input("Please, give a single letter: ")
             
             # Check if the guess is indeed a letter and just one letter.
-            if not guess.isalpha() or len(guess)!=1):
+            if not guess.isalpha() or len(guess)!=1:
                 print("Invalid letter. Please, enter a single alphabetical character.")
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
