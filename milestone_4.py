@@ -42,7 +42,6 @@ class Hangman:
                 break
             # end if
         # end while
-        return
 
 # Create a list of five fruits.
 word_list = ["papaya", "mango", "watermelon", "pear", "apple"]
