@@ -38,9 +38,7 @@ class Hangman:
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
             else:
-                h = Hangman(self.word_list)
-                h.check_guess(guess)
-                #Hangman.check_guess(guess)
+                Hangman.check_guess(guess)
             # end if
         # end while
         return
