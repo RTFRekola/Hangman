@@ -15,7 +15,7 @@ This consists of setting up a word list (as a list), choosing a word from the li
 
 Initially the user is asked for input and then this is checked to be a single alphabetical letter. This is repeated until the condition is valid. 
 Next we check that the approved letter is in the word randomly chosed from a list of five fruits. 
+Finally we move these two operations into two separate functions. The function for asking input does not take any arguments, nor return anything, but does internally ask for user's guess of a letter and checks that it is a single letter. Then it calls for the other function, which takes in as an argument the letter the user guessed, checks whether this letter is in the randomly chosen word and tells the user whether it is or not. Thus the first function is called from the main programme without arguments and after the second function the process returns to the main programme without any return value. 
 
 ## Milestone 4: Create the game class
 
-First the input and validation routines are moved into separate functions. 

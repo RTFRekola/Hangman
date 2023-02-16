@@ -8,6 +8,7 @@ def check_guess(guess):
     else: 
         print("Sorry,", guess, "is not in the word. Try again.")
     # end if
+    return
 
 # Ask for user input and check it is valid.
 def ask_for_input():
