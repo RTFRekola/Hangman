@@ -16,9 +16,10 @@ class Hangman:
         '''
         This method checks if the approved letter is in the randomly chosen word. 
         '''
-        guess = guess.lower()
-        if guess in self.word:
-            print("Good guess!", guess, "is in the word.")
+        self.guess = guess
+        self.guess = self.guess.lower()
+        if self.guess in self.word:
+            print("Good guess!", self.guess, "is in the word.")
         #else: 
         #    print("Sorry,", guess, "is not in the word. Try again.")
         # end if
