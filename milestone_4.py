@@ -40,7 +40,7 @@ class Hangman:
             else:
                 #h = Hangman(word_list)
                 #h.check_guess(guess)
-                check_guess(guess)
+                Hangman.check_guess(guess)
             # end if
         # end while
         return
