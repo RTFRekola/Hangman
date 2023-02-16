@@ -49,6 +49,6 @@ word_list = ["papaya", "mango", "watermelon", "pear", "apple"]
 
 # Ask for user input, check validity and whether it is in the chosen word.
 h = Hangman()
-h.ask_for_input()
+h.ask_for_input(word_list)
 
 
