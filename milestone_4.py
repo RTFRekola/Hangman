@@ -16,10 +16,9 @@ class Hangman:
         '''
         This method checks if the approved letter is in the randomly chosen word. 
         '''
-        self.guess = guess
-        self.guess = self.guess.lower()
-        if self.guess in self.word:
-            print("Good guess!", self.guess, "is in the word.")
+        guess = guess.lower()
+        if guess in self.word:
+            print("Good guess!", guess, "is in the word.")
         #else: 
         #    print("Sorry,", guess, "is not in the word. Try again.")
         # end if
@@ -48,6 +47,7 @@ class Hangman:
 word_list = ["papaya", "mango", "watermelon", "pear", "apple"]
 
 # Ask for user input, check validity and whether it is in the chosen word.
-ask_for_input()
+h = Hangman()
+h.ask_for_input()
 
 
