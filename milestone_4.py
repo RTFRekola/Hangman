@@ -38,8 +38,9 @@ class Hangman:
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
             else:
-                h = Hangman()
-                h.check_guess(guess)
+                #h = Hangman(word_list)
+                #h.check_guess(guess)
+                check_guess(guess)
             # end if
         # end while
         return
@@ -48,7 +49,7 @@ class Hangman:
 word_list = ["papaya", "mango", "watermelon", "pear", "apple"]
 
 # Ask for user input, check validity and whether it is in the chosen word.
-h = Hangman()
-h.ask_for_input(word_list)
+h = Hangman(word_list)
+h.ask_for_input()
 
 
