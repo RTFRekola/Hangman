@@ -35,6 +35,7 @@ class Hangman:
             # Third attempt: 
             # print('You have', self.num_lives, 'lives left.')
         # end if
+        self.list_of_guesses.append(guess)
 
     def ask_for_input(self):
         '''
@@ -51,7 +52,6 @@ class Hangman:
                 print('You already tried that letter!')
             else:
                 self.check_guess(guess)
-                self.list_of_guesses.append(guess)
                 break
             # end if
         # end while
