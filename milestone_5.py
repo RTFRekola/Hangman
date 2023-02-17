@@ -58,7 +58,7 @@ def play_game(word_list):
     '''
     This function allows the actual game play.
     '''
-    num_lives = 2
+    num_lives = 1
     game = Hangman(word_list, num_lives)
     while True:
         if num_lives==0:
