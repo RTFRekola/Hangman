@@ -56,7 +56,7 @@ word_list = ["papaya", "mango", "watermelon", "pear", "apple"]
 
 def play_game(word_list):
     '''
-    This function
+    This function allows the actual game play.
     '''
     num_lives = 5
     game = Hangman(word_list, num_lives)
