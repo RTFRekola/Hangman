@@ -27,15 +27,14 @@ class Hangman:
             self.num_letters = self.num_letters - 1
         else: 
             print(f"Sorry, {guess} is not in the word.")
-            # First attempt:
-            # print(f'You have {self.num_lives} lives left.')
+            First attempt:
+            print(f'You have {self.num_lives} lives left.')
             # Second attempt: 
             # num_lives = self.num_lives
             # print(f'You have {num_lives} lives left.')
             # Third attempt: 
-            print('You have', self.num_lives, 'lives left.')
+            # print('You have', self.num_lives, 'lives left.')
         # end if
-        self.list_of_guesses.append(guess)
 
     def ask_for_input(self):
         '''
@@ -52,6 +51,7 @@ class Hangman:
                 print('You already tried that letter!')
             else:
                 self.check_guess(guess)
+                self.list_of_guesses.append(guess)
                 break
             # end if
         # end while
