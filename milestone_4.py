@@ -24,6 +24,7 @@ class Hangman:
                     self.word_guessed[i] = guess
                 # end if
             # end for
+            self.num_letters = self.num_letters - 1
         #else: 
         #    print("Sorry,", guess, "is not in the word. Try again.")
         # end if
