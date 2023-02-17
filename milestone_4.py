@@ -8,7 +8,7 @@ class Hangman:
         self.word_list = word_list
         self.num_lives = num_lives
         self.word = random.choice(word_list)
-        self.word_guessed = ['_' for i in range(len(self.word))]
+        self.word_guessed = ['_']*len(self.word)
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
 
@@ -38,6 +38,7 @@ class Hangman:
                 print('You already tried that letter!')
             else:
                 self.check_guess(guess)
+                self.list_of_guesses.append(guess)
                 break
             # end if
         # end while
