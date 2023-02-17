@@ -2,13 +2,13 @@ import random
 
 class Hangman:
     '''
-    This class is used to . 
+    This class is used to process Hangman input. 
     '''
     def __init__(self, word_list, num_lives=5):
         self.word_list = word_list
         self.num_lives = num_lives
         self.word = random.choice(word_list)
-        self.word_guessed = ['_']*len(self.word)
+        self.word_guessed = ['_' for i in range(len(self.word))]
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
 
@@ -22,14 +22,13 @@ class Hangman:
         #else: 
         #    print("Sorry,", guess, "is not in the word. Try again.")
         # end if
-        return
 
     def ask_for_input(self):
         '''
         This method asks for user input and checks that it is valid.
         '''
         while True:
-            # Ask user to guess one letter."
+            # Ask user to guess one letter.
             guess = input('Please, give a single letter: ')
             
             # Check if the guess is indeed a letter and just one letter.
