@@ -33,7 +33,7 @@ class Hangman:
             # num_lives = self.num_lives
             # print(f'You have {num_lives} lives left.')
             # Third attempt: 
-            print('You have', self.num_lives}, 'lives left.')
+            print('You have', self.num_lives, 'lives left.')
         # end if
         self.list_of_guesses.append(guess)
 
