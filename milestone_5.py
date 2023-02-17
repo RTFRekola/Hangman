@@ -51,17 +51,14 @@ class Hangman:
             # end if
         # end while
 
-# Create a list of five fruits.
-word_list = ["papaya", "mango", "watermelon", "pear", "apple"]
-
 def play_game(word_list):
     '''
     This function allows the actual game play.
     '''
-    num_lives = 1
+    num_lives = 5
     game = Hangman(word_list, num_lives)
     while True:
-        if num_lives==0:
+        if game.num_lives==0:
             print("You lost!")
             break
         if game.num_letters>0:
@@ -70,5 +67,8 @@ def play_game(word_list):
             print("Congratulations. You won the game!")
             break
     # end while
+
+# Create a list of five fruits.
+word_list = ["papaya", "mango", "watermelon", "pear", "apple"]
 
 play_game(word_list)
