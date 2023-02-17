@@ -27,7 +27,7 @@ class Hangman:
             self.num_letters = self.num_letters - 1
         else: 
             print(f"Sorry, {guess} is not in the word.")
-            First attempt:
+            # First attempt:
             print(f'You have {self.num_lives} lives left.')
             # Second attempt: 
             # num_lives = self.num_lives
